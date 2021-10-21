@@ -1,1 +1,8 @@
-include: common.smk
+rule bwa: 
+    input: 
+        genome="data/genome.fa", 
+        sample="data/samples/A.fastq"
+    output: 
+        "results*/A.bam"
+    shell: 
+        "bwa mem - {input.genome} {input.sample} | samtools view -Sb - > {output}" 

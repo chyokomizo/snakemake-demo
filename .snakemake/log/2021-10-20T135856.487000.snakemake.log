@@ -1,0 +1,3 @@
+NameError in line 2 of /home/chyokomizo/snakemake-demo/workflow/Snakefile:
+name 'common' is not defined
+  File "/home/chyokomizo/snakemake-demo/workflow/Snakefile", line 2, in <module>
